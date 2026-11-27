@@ -1,0 +1,12 @@
+VALIDAÇÃO DESTA VERSÃO
+
+- JavaScript: node --check em api.js, store.js e admin.js: aprovado.
+- Navegador Chromium: execução dos scripts da loja e painel com fetch simulado, sem servidor Java: 50 requisições controladas (17 loja + 33 painel), métodos GET, POST, PUT, DELETE; sem erros JavaScript.
+- Fluxos exercitados: cadastro de cliente, carrinho e pedido, leitura dos dados do pedido no conjunto de dados usado pelo painel, consulta por ID, atualização de cliente, conflito 409 ao excluir cliente com pedido, exclusão de pedido e cadastro de produto.
+- Não foi validada a navegação entre as páginas via servidor HTTP real: ambiente bloqueou a navegação local; as páginas foram exercitadas separadamente.
+- Java/Spring Boot/MySQL/H2: não executados. Maven ausente e repo.maven.apache.org não resolveu no ambiente.
+- Postman: coleção preparada, nenhuma captura real gerada.
+- GitHub: publicação pendente (repositório ainda não fornecido).
+- Imagens externas: carregamento não confirmado.
+
+Os testes simulados não substituem o teste de integração Java ou os prints obrigatórios.
